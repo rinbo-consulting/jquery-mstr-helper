@@ -1,0 +1,24 @@
+{
+  "name": "mstr-helper",
+  "version": "v0.1.0",
+  "title": "MicroStrategy jQuery Helper",
+  "author": {
+    "name": "Paul Bailey",
+    "email": "paul.bailey@rinbo-consulting.co.uk",
+    "url": "http://www.rinbo-consulting.co.uk"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.11.2"
+  },
+  "keywords": ["microstrategy", "mstr"],
+  "bugs": "https://github.com/rinbo-consulting/jquery-mstr-helper/issues",
+  "homepage": "https://github.com/rinbo-consulting/jquery-mstr-helper",
+  "docs": "https://github.com/rinbo-consulting/jquery-mstr-helper",
+  "download": "http://code.jquery.com/#mstr-helper"
+}
