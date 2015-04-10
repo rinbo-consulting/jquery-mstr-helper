@@ -16,9 +16,8 @@
   "dependencies": {
     "jquery": ">=1.11.2"
   },
-  "keywords": ["microstrategy", "mstr"],
+  "keywords": ["microstrategy", "mstr", "jquery-plugin", "ecosystem:jquery"],
   "bugs": "https://github.com/rinbo-consulting/jquery-mstr-helper/issues",
   "homepage": "https://github.com/rinbo-consulting/jquery-mstr-helper",
-  "docs": "https://github.com/rinbo-consulting/jquery-mstr-helper",
-  "download": "http://code.jquery.com/#mstr-helper"
+  "repository": "https://github.com/rinbo-consulting/jquery-mstr-helper"
 }
