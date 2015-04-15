@@ -18,4 +18,4 @@ or
 setupJQueryWithExternalScript('http://your.external.script.url/goes/here');
 ```
 
-These javascript fragments should be added to an HTML object on the document to be customised.
+Adding these javascript fragments via an HTML object on the document loads jQuery, and our helper plugin, and then starts your code once that loading is complete.

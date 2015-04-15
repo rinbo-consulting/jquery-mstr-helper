@@ -1,6 +1,6 @@
 {
   "name": "mstr-helper",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "title": "MicroStrategy jQuery Helper",
   "author": {
     "name": "Paul Bailey",
@@ -17,7 +17,14 @@
     "jquery": ">=1.11.2"
   },
   "keywords": ["microstrategy", "mstr", "jquery-plugin", "ecosystem:jquery"],
-  "bugs": "https://github.com/rinbo-consulting/jquery-mstr-helper/issues",
-  "homepage": "https://github.com/rinbo-consulting/jquery-mstr-helper",
-  "repository": "https://github.com/rinbo-consulting/jquery-mstr-helper"
+  "description": "A plugin to simplify interaction and customisation of MicroStrategy dashboards with jQuery.",
+  "bugs": {
+    "url": "https://github.com/rinbo-consulting/jquery-mstr-helper/issues",
+    "email": "paul.bailey@rinbo-consulting.co.uk"
+  },
+  "homepage": "http://www.rinbo-consulting.co.uk/microstrategy/2015/04/15/jquery-mstr-helper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rinbo-consulting/jquery-mstr-helper"
+  }
 }
