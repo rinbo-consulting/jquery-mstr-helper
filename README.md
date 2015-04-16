@@ -19,3 +19,15 @@ setupJQueryWithExternalScript('http://your.external.script.url/goes/here');
 ```
 
 Adding these javascript fragments via an HTML object on the document loads jQuery, and our helper plugin, and then starts your code once that loading is complete.
+
+## Selector Extension
+
+The helper adds a new selector, `:mstr()`. This is an easier way to select MicroStrategy objects rendered in HTML. It is used in one of three ways:
+
+```javascript
+$(":mstr(dave)"); # This will return all MicroStrategy objects named "dave"
+
+$(":mstr(type=Panel)"); # This will return all Panels on the document (Only Panel and DropDownList implemented for now)
+
+$(":mstr(cssText=ian)"); # This will return all elements whose mstrmojo object has a cssText property of ian
+```
