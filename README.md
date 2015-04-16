@@ -27,7 +27,7 @@ The helper adds a new selector, `:mstr()`. This is an easier way to select Micro
 ```javascript
 $(":mstr(dave)"); # This will return all MicroStrategy objects named "dave"
 
-$(":mstr(type=Panel)"); # This will return all Panels on the document (Only Panel and DropDownList implemented for now)
+$(":mstr(type=Panel)"); # This will return all Panels on the document (Only Panel, DropDownList, and Grid types are implemented for now)
 
 $(":mstr(cssText=ian)"); # This will return all elements whose mstrmojo object has a cssText property of ian
 ```
