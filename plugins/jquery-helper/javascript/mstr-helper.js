@@ -2,7 +2,8 @@
   $.MicroStrategyObjectTypes = {
     Panel: ['scriptClass', 'mstrmojo.ExpressDocPanel'],
     DropDownList: ['cssClass', 'mstrmojo-DocSelector-DropDownList'],
-    Grid: ['gridData']
+    Grid: ['gridData'],
+    VITab: ['scriptClass', 'mstrmojo.vi.ui.tabs.Tab']
   };
   $.expr[':'].mstr = $.expr.createPseudo(function(arg) {
     if (arg) {
@@ -40,4 +41,42 @@
       }
     }
   });
+
+  $.getVITabNames = function() {
+    var names = [];
+
+    $.each($(":mstr(type=VITab)"), function(idx, elem) {
+      names.push(elem.innerText.replace(/[\n\r]/g, ''));
+    });
+
+    return names;
+  };
+
+  $.selectVITabByName = function(tabName) {
+    $.each(mstrmojo.all, function(key, value) {
+      if(value[$.MicroStrategyObjectTypes.VITab[0]] == $.MicroStrategyObjectTypes.VITab[1]) {
+        if(value.title == tabName) {
+          console.log('mstr-helper says: switching to tab: ' + tabName);
+          value.tabSelected();
+        } else {
+          console.log('mstr-helper says: ' + value.title + ' != ' + tabName + '. Move along.');
+        }
+      }
+    });
+  };
+
+  $.selectVITabByNumber = function(tabNumber) {
+    var counter = 0;
+    $.each(mstrmojo.all, function(key, value) {
+      if(value[$.MicroStrategyObjectTypes.VITab[0]] == $.MicroStrategyObjectTypes.VITab[1]) {
+        counter++;
+        if(counter == tabNumber) {
+          console.log('mstr-helper says: switching to tab no: ' + tabNumber);
+          value.tabSelected();
+        } else {
+          console.log('mstr-helper says: no.' + counter + ' != no. ' + tabNumber + '. Move along.');
+        }
+      }
+    });
+  };
 })(jQuery);
